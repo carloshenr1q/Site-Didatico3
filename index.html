@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(img/fundo-madeira.jpg) no-repeat center center fixed;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        #iphone{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 240px;
+            height: 481px;
+            background: url(img/frame-iphone.png) no-repeat center;
+            background-size: contain;
+            z-index: 10;
+        }
+        div#iphone > iframe{
+            margin-top: 61px;
+            margin-left: 18px;
+            border: none;
+            scrollbar-width: none;
+        }
+        div#iphone > iframe::-webkit-scrollbar{
+            display: none;
+        }
+        #menu{
+            position: absolute;
+            top: 25vh;
+            padding-right: 4px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div#menu a > img{
+            margin-bottom: -15px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="iphone">
+        <iframe width="205px" height="362px" src="sites/menu.html" name="frame"></iframe>
+    </div>
+    <div id="menu">
+        <a href="sites/menu.html" target="frame"><img src="img/logo-home.jpg" name="display" alt=""></a>
+        <br>
+        <a href="sites/github.html" target="frame"><img src="img/logo-github.jpg" alt=""></a>
+        <br>
+        <a href="sites/instagram.html" target="frame"><img src="img/logo-facebook.jpg" alt=""></a>
+        <br>
+        <a href="sites/instagram.html" target="frame" name="display"><img src="img/logo-instagram.jpg"  alt=""></a>
+        <br>
+        <a href="" target="frame"><img src="img/logo-twitter.jpg" alt=""></a>
+        <br>
+        <a href="sites/steam.html" target="frame"><img src="img/Steam_icon_logo.svg.jpg" alt=""></a>
+    </div>
+</body>
+</html>
